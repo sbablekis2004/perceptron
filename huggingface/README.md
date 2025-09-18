@@ -15,7 +15,7 @@ model = AutoModelForCausalLM.from_pretrained(hf_path, trust_remote_code=True)
 
 Example input: `Determine whether it is safe to cross the street. Look for signage and moving traffic.` 
 
-![input](huggingface/assets/example.webp)
+![input](assets/example.webp)
 
 
 ```bash
@@ -33,4 +33,4 @@ No, it is not safe to cross the street at this time. The <point_box mention="tra
 
 Visualizing the results 
 
-![prediction](huggingface/assets/prediction.jpeg)
+![prediction](assets/prediction.jpeg)
