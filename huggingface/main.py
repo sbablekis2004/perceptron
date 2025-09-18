@@ -16,7 +16,6 @@ from __future__ import annotations
 import torch
 from PIL import Image as PILImage
 from PIL import ImageDraw, ImageFont
-import base64
 from transformers import AutoConfig, AutoModelForCausalLM, AutoProcessor
 from loguru import logger
 
