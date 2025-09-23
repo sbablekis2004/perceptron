@@ -216,7 +216,7 @@ def _detect_system_message(classes: Sequence[str] | None) -> SequenceNode:
         message = f"Your goal is to segment out the following categories: {categories}"
     else:
         message = "Your goal is to segment out the objects in the scene"
-    return SequenceNode([text(message)])
+    return SequenceNode([system(message)])
 
 
 def _detect_sequence(
