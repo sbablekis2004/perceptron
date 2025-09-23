@@ -211,11 +211,11 @@ def ocr(
 
 
 def _detect_system_message(classes: Sequence[str] | None) -> SequenceNode:
-    categories = ", ".join(str(c) for c in classes) if classes else "the objects in the scene"
-    message = (
-        "Your goal is to segment out the following categories: "
-        f"{categories}. Always respond using <point_box> tags and include mention attributes when appropriate."
-    )
+    if classes:
+        categories = ", ".join(str(c) for c in classes)
+        message = f"Your goal is to segment out the following categories: {categories}"
+    else:
+        message = "Your goal is to segment out the objects in the scene"
     return SequenceNode([system(message)])
 
 
@@ -226,22 +226,14 @@ def _detect_sequence(
     examples: Sequence[Any] | None,
 ) -> SequenceNode:
     sequence = _detect_system_message(classes)
-    hint = _expectation_hint_text("box")
-    if hint:
-        sequence = sequence + text(hint)
     normalized_examples = _normalize_examples(examples, classes) if examples else []
     for ex in normalized_examples:
         sequence = sequence + image_node(ex.image)
         if ex.prompt:
             sequence = sequence + text(ex.prompt)
         sequence = sequence + agent(ex.tags)
-    instruction = "Return canonical <point_box> tags for every detected object. Include a mention attribute with the class label when known."
-    if classes:
-        instruction += " Focus on: " + ", ".join(str(c) for c in classes) + "."
-    else:
-        instruction += " Include all salient objects in the scene."
     im = image_node(image_obj)
-    sequence = sequence + im + text(instruction)
+    sequence = sequence + im
     return sequence
 
 
