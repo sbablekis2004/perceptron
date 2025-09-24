@@ -162,6 +162,12 @@ Set `stream=True` in the decorator to receive incremental events (`text.delta`, 
 Repository layout
 - `src/perceptron` – core SDK and DSL
 - `tests` – high-level API and DSL tests
+- `papers` – publications and preprints (see `papers/isaac_01.pdf`)
+
+---
+
+## Paper
+- The Perceptron paper is included in this repository: [papers/isaac_01.pdf](papers/isaac_01.pdf).
 
 ---
 
